@@ -10,22 +10,36 @@
 		</header>
 		<section id="main-form">
 			<form action="somewhere.php" method="post">
-				<div id="fn-div" class="part1">
-					<label for="FirstName">First Name</label>
-					<input type="text" name="FirstName" id="FirstName" placeholder="ex: Bob">
-				</div>
-				<div id="ln-div" class="part1">
-					<label for="LastName">Last Name</label>
-					<input type="text" name="LastName" id="LastName" placeholder="ex: McBobbins">
-				</div>
-				<div id="email-div" class="part1">
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email" placeholder="ex: bob@hotmail.com">
-				</div>
-				<div id="password-div" class="part1">
-					<label for="password">Password</label>
-					<input type="password" name="password" id="password" placeholder="ex: bobo123">
-				</div>
+				<section id="part1">
+					<div id="fn-div" class="names">
+						<label for="FirstName">First Name</label>
+						<input type="text" name="FirstName" id="FirstName" placeholder="ex: Bob">
+					</div>
+					<div id="ln-div" class="names">
+						<label for="LastName">Last Name</label>
+						<input type="text" name="LastName" id="LastName" placeholder="ex: McBobbins">
+					</div>
+					<div id="email-div" class="sign-in">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" placeholder="ex: bob@hotmail.com">
+					</div>
+					<div id="password-div" class="sign-in">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" placeholder="ex: bobo123">
+					</div>
+				</section>
+				<section id="part2">
+					<div id="intro-text-div">
+						<label for="intro-text">Introductory Text</label>
+						<textarea name="intro-text" id="intro-text" placeholder="Introduce yourself :)">
+							
+						</textarea>
+					</div>
+					<div id="dob-div">
+						<label for="dob">When were you born?</label>
+						<input type="date" name="dob" id="dob">
+					</div>
+				</section>
 			</form>
 		</section>
 	</body>
