@@ -32,9 +32,7 @@
 					<h3>Help us get to know you!</h3>
 					<div id="intro-text-div">
 						<label for="intro-text">Introductory Text</label>
-						<textarea name="intro-text" id="intro-text" placeholder="Introduce yourself :)">
-							Introduce yourself :)
-						</textarea>
+						<textarea name="intro-text" id="intro-text" placeholder="Introduce yourself :)"></textarea>
 					</div>
 					<div id="dob-div">
 						<label for="dob">When were you born?</label>
@@ -101,9 +99,40 @@
 							<option value="RM">Republic of Moon</option>
 						</select>
 					</div>
-					<div id="pc-div" class="places">
-						
+					<div id="pcode-div" class="places">
+						<label for="pcode">Postal code</label>
+						<input type="text" name="pcode" id="pcode" placeholder="ex: A0A 0A0">
 					</div>
+				</section>
+				<section id="part4">
+					<h3>Bonus Questions!</h3>
+					<div id="hobbies-div">
+						<p>What are your hobbies? (Select all that apply)</p>
+						<label for="hiking">
+							Hiking
+							<input type="checkbox" name="hobbies" id="hiking" value="hiking">
+						</label><br>
+						<label for="skating">
+							Skating
+							<input type="checkbox" name="hobbies" id="skating" value="skating">
+						</label><br>
+						<label for="knitting">
+							Knitting
+							<input type="checkbox" name="hobbies" id="knitting" value="knitting">
+						</label><br>
+						<label for="nohobbies">
+							I don't have any hobbies :(
+							<input type="checkbox" name="hobbies" id="nohobbies" value="nohobbies">
+						</label>
+					</div><br>
+					<div id="siterec-div">
+						<label for="siterec">Any cool sites you can recommend?</label>
+						<input type="url" name="siterec" id="siterec" placeholder="ex: www.BobMcbobbins.com">
+					</div><br>
+				</section>
+				<section id="part5">
+					<button type="submit">Submit</button>
+					<button type="reset">Reset</button>
 				</section>
 			</form>
 		</section>
