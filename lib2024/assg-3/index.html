@@ -29,15 +29,80 @@
 					</div>
 				</section>
 				<section id="part2">
+					<h3>Help us get to know you!</h3>
 					<div id="intro-text-div">
 						<label for="intro-text">Introductory Text</label>
 						<textarea name="intro-text" id="intro-text" placeholder="Introduce yourself :)">
-							
+							Introduce yourself :)
 						</textarea>
 					</div>
 					<div id="dob-div">
 						<label for="dob">When were you born?</label>
 						<input type="date" name="dob" id="dob">
+					</div>
+					<div id="gender-div">
+						<p>How do you identify?</p>
+						<label for="other">
+							<input type="radio" name="gender" id="other" value="other" checked>
+							Other
+						</label>
+						<label for="female">
+							<input type="radio" name="gender" id="female" value="female">
+							Female
+						</label>
+						<label>
+							<input type="radio" name="gender" id="male" value="male">
+							Male
+						</label>
+					</div>
+				</section>
+				<section id="part3">
+					<h3>Help us stay in touch!</h3>
+					<div id="mn-div">
+						<label for="mn">Mobile Number</label>
+						<input type="number" name="mn" id="mn">
+					</div>
+					<div id="address-div" class="places">
+						<label for="address">Address</label>
+						<input type="text" name="address" id="address" placeholder="ex: 123 Bob street">
+					</div>
+					<div id="city-div" class="places">
+						<label for="city">City</label>
+						<input type="text" name="city" id="city" placeholder="ex: Ottawa">	
+					</div>
+					<div id="province-div" class="places">
+						<label for="province">Province</label>
+						<select>
+							<optgroup label="Canada">
+								<option value="NS">Nova Scotia</option>
+								<option value="PEI">Prince Edward Island</option>
+								<option value="NB">New Brunswick</option>
+								<option value="NAL">Newfoundland and Labrador</option>
+								<option value="QBC">Quebec</option>
+								<option value="ONT" selected>Ontario</option>
+								<option value="MTB">Manitoba</option>
+								<option value="SSK">Saskatchewan</option>
+								<option value="ALB">Alberta</option>
+								<option value="BC">British-Columbia</option>
+								<option value="YUK">Yukon</option>
+								<option value="NWT">Northwest Territories</option>
+								<option value="NVT">Nunavut</option>
+							</optgroup>
+							<optgroup label="Republic of Moon">
+								<option value="LW">Lightward</option>
+								<option value="DW">Darkward</option>
+							</optgroup>
+						</select>
+					</div>
+					<div id="country-div" class="places">
+						<label for="country">Country</label>
+						<select>
+							<option value="CAN">Canada</option>
+							<option value="RM">Republic of Moon</option>
+						</select>
+					</div>
+					<div id="pc-div" class="places">
+						
 					</div>
 				</section>
 			</form>
