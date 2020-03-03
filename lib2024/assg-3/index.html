@@ -8,24 +8,25 @@
 		<header>
 			<h1>A very important form</h1>
 		</header>
-		<section id="main-form">
+		<main id="main-form">
 			<form action="somewhere.php" method="post">
 				<section id="part1">
+					<h3>Sign up today!</h3>
 					<div id="fn-div" class="names">
 						<label for="FirstName">First Name</label>
-						<input type="text" name="FirstName" id="FirstName" placeholder="ex: Bob">
+						<input type="text" name="FirstName" id="FirstName" placeholder="ex: Bob" required>
 					</div>
 					<div id="ln-div" class="names">
 						<label for="LastName">Last Name</label>
-						<input type="text" name="LastName" id="LastName" placeholder="ex: McBobbins">
+						<input type="text" name="LastName" id="LastName" placeholder="ex: McBobbins" required>
 					</div>
 					<div id="email-div" class="sign-in">
 						<label for="email">Email</label>
-						<input type="email" name="email" id="email" placeholder="ex: bob@hotmail.com">
+						<input type="email" name="email" id="email" placeholder="ex: bob@hotmail.com" required>
 					</div>
 					<div id="password-div" class="sign-in">
 						<label for="password">Password</label>
-						<input type="password" name="password" id="password" placeholder="ex: bobo123">
+						<input type="password" name="password" id="password" placeholder="ex: bobo123" required>
 					</div>
 				</section>
 				<section id="part2">
@@ -58,7 +59,7 @@
 					<h3>Help us stay in touch!</h3>
 					<div id="mn-div">
 						<label for="mn">Mobile Number</label>
-						<input type="number" name="mn" id="mn">
+						<input type="number" name="mn" id="mn" placeholder="ex: 613-555-1234">
 					</div>
 					<div id="address-div" class="places">
 						<label for="address">Address</label>
@@ -70,7 +71,7 @@
 					</div>
 					<div id="province-div" class="places">
 						<label for="province">Province</label>
-						<select>
+						<select id="province" name="province">
 							<optgroup label="Canada">
 								<option value="NS">Nova Scotia</option>
 								<option value="PEI">Prince Edward Island</option>
@@ -94,7 +95,7 @@
 					</div>
 					<div id="country-div" class="places">
 						<label for="country">Country</label>
-						<select>
+						<select id="country" name="country">
 							<option value="CAN">Canada</option>
 							<option value="RM">Republic of Moon</option>
 						</select>
@@ -129,12 +130,12 @@
 						<label for="siterec">Any cool sites you can recommend?</label>
 						<input type="url" name="siterec" id="siterec" placeholder="ex: www.BobMcbobbins.com">
 					</div><br>
-				</section>
-				<section id="part5">
-					<button type="submit">Submit</button>
-					<button type="reset">Reset</button>
+					<div id="button-div">
+						<button type="submit">Submit</button>
+						<button type="reset">Reset</button>
+					</div>
 				</section>
 			</form>
-		</section>
+		</main>
 	</body>
 </html>
