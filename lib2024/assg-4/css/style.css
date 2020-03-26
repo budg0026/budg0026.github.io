@@ -58,21 +58,26 @@ table {
 @charset "utf-8";
 
 body{
-	background: pink;
+	background-image: url(../img/geometric-leaves.png);
 }
 
 /*header start*/
-header{
+#header{
 	background:green;
+	width: 100%;
+	float: top;
+
 }
 
 #logo{
 	float: left;
-	margin: 1%;
+	margin: 10px;
 }
 
 #title-head{
 	font-size: 40px;
+	padding: 40px;
+	height: 75px;
 
 }
 
@@ -95,21 +100,64 @@ li{
 /*header end*/
 
 /*main content start*/
-#main-content-wrapper{
-	margin: 5px;
+/*main article start*/
+.medi-title{
+	padding: 10px;
+	font-size: 20px;
 }
 
-article{
+#article1{
 	float: left;
-	width: 69%;
+	max-width: 632px;
+	min-width: 286px;
 	background: yellow;
+	padding: 10px;
 }
+/*main article end*/
 
+/*aside start*/
 aside{
-	float: right;
-	width: 29%;
+	float: left;
+	width: 268px;
+	padding: 10px;
 	background: orange;
 }
+
+
+
+/*article 2 start*/
+#aside-jpg-container{
+	width: 100%;
+}
+/*pictures start*/
+.small-title{
+	padding-bottom: 10px;
+	font-size: 16px;
+
+}
+
+#article2-container{
+	width: 100%;
+}
+
+.article2-jpg{
+	float: left;
+	margin: 2%;
+}
+
+#cat2-container{
+	position: relative;
+	left: 20%;
+}
+
+#cat3-container{
+	float: right;
+}
+
+figcaption{
+	text-align: center;
+}
+/*pictures end*/
 
 .text{
 	margin: 5px;
@@ -120,12 +168,15 @@ aside{
 	padding: 5px;
 }
 
-footer{
+#footer{
 	background: purple;
+	width: 100%;
 
 }
 
 #copyright{
 	text-align: left;
 	float: left;
+	padding-top: 20px;
+	padding-left: 10px;
 }
