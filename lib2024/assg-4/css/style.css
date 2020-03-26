@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,15 +57,22 @@ table {
 	clear: both;
 }
 
-@charset "utf-8";
+/* main content */
 
 body{
 	background-image: url(../img/geometric-leaves.png);
 }
 
-/*header start*/
-#header{
-	background:green;
+/* titles */
+.medi-title{
+	padding: 10px;
+	font-size: 30px;
+}
+
+
+
+.header{
+	background: rgb(124, 197, 118);
 	width: 100%;
 	float: top;
 
@@ -93,7 +102,7 @@ li{
 	height:2%;
 	padding:2%;
 	margin: 2.5%;
-	background: blue;
+	background: rgb(109, 207, 246);
 	
 }
 /*main navigation end*/
@@ -101,16 +110,12 @@ li{
 
 /*main content start*/
 /*main article start*/
-.medi-title{
-	padding: 10px;
-	font-size: 20px;
-}
+
 
 #article1{
 	float: left;
 	max-width: 632px;
 	min-width: 286px;
-	background: yellow;
 	padding: 10px;
 }
 /*main article end*/
@@ -120,7 +125,6 @@ aside{
 	float: left;
 	width: 268px;
 	padding: 10px;
-	background: orange;
 }
 
 
@@ -129,13 +133,14 @@ aside{
 #aside-jpg-container{
 	width: 100%;
 }
-/*pictures start*/
+
 .small-title{
 	padding-bottom: 10px;
-	font-size: 16px;
+	font-size: 20px;
 
 }
 
+/*pictures start*/
 #article2-container{
 	width: 100%;
 }
@@ -143,16 +148,11 @@ aside{
 .article2-jpg{
 	float: left;
 	margin: 2%;
+	margin-right: 5%;
+	margin-left: 5%;
+	box-sizing: border-box;
 }
 
-#cat2-container{
-	position: relative;
-	left: 20%;
-}
-
-#cat3-container{
-	float: right;
-}
 
 figcaption{
 	text-align: center;
@@ -169,7 +169,7 @@ figcaption{
 }
 
 #footer{
-	background: purple;
+	background: rgb(124, 197, 118);
 	width: 100%;
 
 }
